@@ -1,0 +1,1749 @@
+@import url(https://db.onlinewebfonts.com/c/d555f522be38283d7a36afd03779ea4c?family=Akazan+Bold);
+@import url(https://db.onlinewebfonts.com/c/1130e1ae4e4a76c7118c0b35c4b9d019?family=Inter);
+
+@font-face {
+  font-family: "Akazan Bold";
+  src: url("https://db.onlinewebfonts.com/t/d555f522be38283d7a36afd03779ea4c.eot");
+  src: url("https://db.onlinewebfonts.com/t/d555f522be38283d7a36afd03779ea4c.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d555f522be38283d7a36afd03779ea4c.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d555f522be38283d7a36afd03779ea4c.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/d555f522be38283d7a36afd03779ea4c.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d555f522be38283d7a36afd03779ea4c.svg#Akazan Bold")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("https://db.onlinewebfonts.com/t/1130e1ae4e4a76c7118c0b35c4b9d019.eot");
+  src: url("https://db.onlinewebfonts.com/t/1130e1ae4e4a76c7118c0b35c4b9d019.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1130e1ae4e4a76c7118c0b35c4b9d019.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1130e1ae4e4a76c7118c0b35c4b9d019.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/1130e1ae4e4a76c7118c0b35c4b9d019.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1130e1ae4e4a76c7118c0b35c4b9d019.svg#Inter")
+      format("svg");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  margin-bottom: 70px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 37px;
+}
+
+.btn {
+  padding: 12px 34px;
+  border-radius: 100px;
+  border: none;
+  margin-right: 15px;
+}
+
+/* <NavBar> */
+header nav .home-nav {
+  color: white;
+  padding: 10px 0;
+  background-color: #0b9586;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header nav .home-nav .navbar-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header nav .home-nav .container .navbar-section .nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 0px;
+  transition: all 0.3s ease;
+}
+
+header nav .home-nav .container .navbar-section .nav-links ul li a {
+  text-transform: capitalize;
+  padding: 8px 28px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav .home-nav .container .navbar-section .nav-links ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+header nav .home-nav .navbar-section .callUs .callNumber {
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 18px;
+}
+
+header nav .home-nav .navbar-section .callUs {
+  width: 20%;
+  display: flex;
+  flex-flow: column;
+  text-align: right;
+}
+
+header nav .home-nav .container ul .homeLink {
+  background-color: rgba(0, 0, 0, 0.06);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+header nav .home-nav .icons {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+header nav .home-nav .icons span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header nav .home-nav .navbar-section {
+    display: none;
+  }
+
+  header nav .home-nav .icons {
+    display: inline-flex;
+    cursor: pointer;
+  }
+
+  header nav .home-nav .icons span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+}
+
+/* Show icons and hide navbar-section on medium devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  header nav .home-nav .container .navbar-section .nav-links {
+    font-size: 13px;
+    margin-right: 20px;
+  }
+
+  header nav .home-nav .container .navbar-section .nav-links ul li a {
+    padding: 8px 5px;
+  }
+
+  header nav .home-nav .navbar-section .callUs {
+    width: 25%;
+  }
+
+  header nav .home-nav .navbar-section .callUs span {
+    font-size: 13px;
+  }
+
+  header nav .home-nav .navbar-section .callUs .callNumber {
+    font-size: 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  header nav .home-nav .container .navbar-section .nav-links {
+    font-size: 15px;
+    margin-right: 110px;
+  }
+
+  header nav .home-nav .container .navbar-section .nav-links ul li a {
+    padding: 8px 15px;
+  }
+
+  header nav .home-nav .navbar-section .callUs {
+    width: 25%;
+  }
+
+  header nav .home-nav .navbar-section .callUs .callNumber {
+    font-size: 15px;
+  }
+}
+
+/* </NavBar> */
+/* <main> */
+
+main .line {
+  position: absolute;
+  top: 140px;
+  left: 15%;
+  z-index: 99;
+  color: white;
+}
+
+main .line .numberOne {
+  position: relative;
+  bottom: 1px;
+  right: 50px;
+}
+
+main .line .inner {
+  border: 2px solid rgba(87, 87, 87, 1);
+  width: 220px;
+  position: relative;
+  bottom: 15px;
+}
+
+main .line .numberFour {
+  position: relative;
+  bottom: 29px;
+  left: 255px;
+}
+
+main .line .inner::before {
+  content: "";
+  width: 100px;
+  height: 3.5px;
+  background-color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+
+main .home {
+  background-image: url(Assets/solar-panels-meadow\ 1.png);
+  background-size: 100% 100%;
+  height: 550px;
+  color: white;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  top: 68px;
+}
+
+main .home .home-caption {
+  width: 80%;
+  max-width: 550px;
+  margin-left: 11%;
+}
+
+main .home .home-caption h1 {
+  font-weight: 600;
+  font-size: 2.8rem;
+}
+
+main .home .home-caption p {
+  padding: 15px 0;
+}
+
+main .home .btn1 {
+  background-color: #3cab90;
+  color: white;
+}
+
+main .home .btn2 {
+  background-color: #ffbb1c;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  main .line {
+    display: none;
+  }
+
+  main .home {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    top: 40px;
+    padding: 50px 0px;
+  }
+
+  main .home .home-caption {
+    width: 100%;
+    position: relative;
+    margin-left: 20px;
+    top: 7%;
+  }
+
+  main .home .home-caption h1 {
+    font-size: 28px;
+  }
+
+  main .home .home-caption p {
+    font-size: 14px;
+  }
+
+  main .home .buttons {
+    display: flex;
+  }
+
+  main .home .btn1,
+  main .home .btn2 {
+    width: auto;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  main .line {
+    top: 150px;
+    left: 150px;
+  }
+
+  main .line .inner {
+    width: 180px;
+  }
+
+  main .line .inner::before {
+    width: 60px;
+  }
+
+  main .line .numberFour {
+    left: 195px;
+  }
+
+  main .home .home-caption {
+    margin-left: 100px;
+    width: 80%;
+  }
+
+  main .home .home-caption h1 {
+    font-size: 36px;
+  }
+
+  main .home .home-caption p {
+    font-size: 18px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  main .line {
+    top: 140px;
+    left: 170px;
+  }
+
+  main .line .inner {
+    width: 200px;
+  }
+
+  main .line .inner::before {
+    width: 80px;
+  }
+
+  main .line .numberFour {
+    left: 215px;
+  }
+
+  main .home {
+    height: 550px;
+  }
+
+  main .home .home-caption {
+    margin-left: 120px;
+    width: 60%;
+  }
+
+  main .home .home-caption h1 {
+    font-size: 40px;
+  }
+
+  main .home .home-caption p {
+    font-size: 20px;
+  }
+}
+
+/*  Large devices (laptops/desktops, 1199px and up) */
+@media only screen and (min-width: 1199px) {
+  section .container .friendliest {
+    flex-direction: column;
+    padding-top: 40px;
+  }
+
+  section .container .friendliest .friendliestCaption {
+    width: 100%;
+  }
+
+  section .container .friendliest .friendliestImg {
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  section .container .friendliest .friendliestImg img {
+    width: 90%;
+    height: auto;
+  }
+
+  section .container .friendliest .friendliestImg .solarCharging {
+    margin-left: 20px;
+    padding: 20px 25px;
+    width: 50%;
+    background-color: #ffbb1c;
+    border-radius: 12px;
+    position: relative;
+    bottom: 80px;
+    right: 60px;
+  }
+
+  section .container .friendliest .solarCharging img {
+    width: 70%;
+  }
+
+  section .container .friendliest .friendliestCaption .grid-container {
+    grid-template-columns: auto;
+  }
+}
+
+/* </main> */
+/* </Home> */
+
+/* <The Friendliest Installers> */
+
+section .container .friendliest {
+  padding-top: 90px;
+  display: flex;
+}
+
+section .container .friendliest .friendliestCaption {
+  width: 50%;
+}
+
+section .container .friendliest .friendliestCaption p {
+  padding: 20px 0;
+  font-weight: 400;
+  font-size: 14.5px;
+}
+
+section .container .friendliest .friendliestCaption .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+}
+
+section
+  .container
+  .friendliest
+  .friendliestCaption
+  .grid-container
+  .grid-item-col1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 0;
+  color: #84bd3a;
+  font-family: "Akazan Bold", sans-serif;
+}
+
+section
+  .container
+  .friendliest
+  .friendliestCaption
+  .grid-container
+  .grid-item-col2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 12px;
+  font-weight: 700;
+}
+
+section .container .friendliest .friendliestImg {
+  width: 37%;
+  height: 400px;
+  margin-left: 120px;
+}
+
+section .container .friendliest .friendliestImg img {
+  width: 100%;
+  height: 100%;
+}
+
+section .container .friendliest .friendliestImg .solarCharging {
+  padding: 20px 25px;
+  width: 55%;
+  background-color: #ffbb1c;
+  border-radius: 12px;
+  position: relative;
+  bottom: 200px;
+  right: 40px;
+}
+
+section .container .friendliest .solarCharging img {
+  width: 45%;
+}
+
+section .container .friendliest .solarCharging p {
+  padding-top: 15px;
+  font-size: small;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  section .container .friendliest {
+    flex-direction: column;
+    padding-top: 40px;
+  }
+
+  section .container .friendliest .friendliestCaption {
+    width: 100%;
+  }
+
+  section .container .friendliest .friendliestImg {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+
+  section .container .friendliest .friendliestImg img {
+    width: 100%;
+    height: auto;
+  }
+
+  section .container .friendliest .friendliestImg .solarCharging {
+    margin-left: 20px;
+    padding: 12px 25px;
+    width: auto;
+    max-width: 60%;
+    background-color: #ffbb1c;
+    border-radius: 12px;
+    position: relative;
+    bottom: 120px;
+    right: 70px;
+  }
+
+  section .container .friendliest .solarCharging img {
+    width: auto;
+    max-width: 60%;
+  }
+
+  section .container .friendliest .friendliestCaption .grid-container {
+    grid-template-columns: auto;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  section .container .friendliest {
+    flex-direction: row;
+  }
+
+  section .container .friendliest .friendliestCaption {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+
+  section .container .friendliest .friendliestImg {
+    width: auto;
+    max-width: 45%;
+    margin-left: 60px;
+    margin-top: 150px;
+    height: 95%;
+  }
+
+  section .container .friendliest .solarCharging {
+    width: 60%;
+    bottom: 150px;
+    right: 30px;
+  }
+
+  section .container .friendliest .friendliestCaption .grid-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  section .container .friendliest {
+    padding-top: 70px;
+    height: 620px;
+  }
+
+  section .container .friendliest .friendliestImg {
+    width: 37%;
+    margin-left: 100px;
+  }
+
+  section .container .friendliest .solarCharging {
+    width: 55%;
+    bottom: 200px;
+    right: 40px;
+  }
+
+  section .container .friendliest .friendliestCaption .grid-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+/*  Large devices (laptops/desktops, 1199px and up) */
+@media only screen and (min-width: 1199px) {
+  section .container .friendliest {
+    flex-direction: row;
+    padding-top: 40px;
+  }
+
+  section .container .friendliest .friendliestCaption {
+    width: 50%;
+    margin-right: 40px;
+  }
+
+  section .container .friendliest .friendliestImg {
+    width: 40%;
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+  }
+
+  section .container .friendliest .friendliestImg img {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+  }
+
+  section .container .friendliest .friendliestImg .solarCharging {
+    margin-left: 20px;
+    width: 55%;
+    background-color: #ffbb1c;
+    border-radius: 12px;
+    position: absolute;
+    bottom: -30px;
+    right: 250px;
+    height: 45%;
+    padding: 12px 25px;
+  }
+
+  section .container .friendliest .solarCharging img {
+    width: 50%;
+    height: auto;
+  }
+
+  section .container .friendliest .friendliestCaption .grid-container {
+    margin-bottom: 70px;
+  }
+}
+
+/* </The Friendliest Installers> */
+
+/* <Power> */
+
+section .power {
+  background-image: url(Assets/8116\ 1.png);
+  background-size: 100% 100%;
+  height: 450px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+section .power .power-caption {
+  width: 45%;
+  margin-left: 150px;
+}
+
+section .power .power-caption h2 {
+  font-size: 40px;
+}
+
+section .power .power-caption p {
+  width: 90%;
+  padding: 25px 0;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+section .power div div button {
+  padding: 12px 36px;
+
+  border-radius: 100px;
+  border: none;
+  background-color: #ffbb1c;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+  section .power {
+    background-size: cover;
+    height: auto;
+    padding: 20px;
+    bottom: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section .power .power-caption {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  section .power .power-caption h2 {
+    font-size: 24px;
+  }
+
+  section .power .power-caption p {
+    width: 100%;
+    padding: 20px 0;
+    font-size: 16px;
+  }
+
+  section .power div div button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 599px) and (max-width: 969px) {
+  section .power {
+    height: 300px;
+  }
+
+  section .power .power-caption {
+    width: 60%;
+    margin-left: 80px;
+  }
+
+  section .power .power-caption h2 {
+    font-size: 30px;
+    max-width: 90%;
+  }
+
+  section .power .power-caption p {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  section .power div div button {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}
+
+/* Medium devices (laptops/desktops,from 768px to 1084px) */
+@media only screen and (min-width: 970px) and (max-width: 1108px) {
+  section .power {
+    height: 320px;
+  }
+
+  section .power .power-caption {
+    width: 60%;
+    margin-left: 80px;
+  }
+
+  section .power .power-caption h2 {
+    font-size: 28px;
+  }
+
+  section .power .power-caption p {
+    width: 80%;
+    font-size: 15px;
+  }
+
+  section .power div div button {
+    padding: 12px 25px;
+    font-size: 13px;
+  }
+}
+/* </Power> */
+
+/* <Solar Kits> */
+
+section .container {
+  display: block;
+}
+
+section .container .solarKits {
+  position: relative;
+  top: 40px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section .container .solarKits p {
+  padding-top: 15px;
+  font-size: 13.5px;
+}
+
+section .solarKitsGrid {
+  position: relative;
+  margin-top: 100px;
+  display: flex;
+}
+
+section .solarKitsGrid .solarKitsGrid-caption {
+  padding: 15px 0 0 15px;
+}
+
+section .solarKitsGrid .solarKitsGrid-caption p {
+  font-size: 15.1px;
+  display: inline-block;
+  max-width: 301px;
+  max-height: 93px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 20px 0;
+  line-height: 1.5;
+}
+
+section .solarKitsGrid .solarKitsGrid-caption p .ellipsis {
+  display: inline-block;
+  max-width: 79px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+section .solarKitsGrid .solarKitsGridItem {
+  width: 30%;
+  margin: 0 auto;
+  margin-right: 4%;
+}
+
+section .solarKitsGrid .solarKitsGridItem img {
+  width: 100%;
+}
+
+section .solarKitsGrid .solarKitsGridItem a {
+  color: rgba(60, 171, 144, 1);
+  padding-top: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  section .container {
+    padding: 0 10px;
+  }
+
+  section .container .solarKits {
+    bottom: 0;
+    width: 100%;
+  }
+
+  section .container .solarKits p {
+    font-size: 12px;
+  }
+
+  section .solarKitsGrid {
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+  }
+
+  section .solarKitsGrid .solarKitsGridItem {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  section .solarKitsGrid .solarKitsGrid-caption p {
+    font-size: 13px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 83px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  section .solarKitsGrid {
+    flex-wrap: wrap;
+  }
+
+  section .container .solarKits {
+    width: 90%;
+    bottom: 50px;
+  }
+
+  section .solarKitsGrid .solarKitsGrid-caption p {
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  section .solarKitsGrid .solarKitsGridItem {
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  section .solarKitsGrid .solarKitsGridItem:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  section .container .solarKits h2 {
+    font-size: 32px;
+  }
+
+  section .solarKitsGrid .solarKitsGrid-caption h3 {
+    font-size: 16px;
+  }
+
+  section .solarKitsGrid .solarKitsGrid-caption p {
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  section .solarKitsGrid .solarKitsGridItem:last-child {
+    margin-right: 0;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  section .container .solarKits {
+    width: 70%;
+  }
+}
+
+/* </Solar Kits> */
+
+/* <Repairs> */
+
+section .repairs {
+  background-image: url(Assets/repairs.png);
+  background-size: 100% 100%;
+  height: 450px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .repairs .repairs-caption {
+  background-color: rgba(0, 0, 0, 0.57);
+  width: 59%;
+  margin: 0 auto;
+  align-items: center;
+  padding: 44px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+section .repairs div p {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  section .repairs {
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  section .repairs .repairs-caption {
+    width: 95%;
+    padding: 15px 20px;
+  }
+
+  section .repairs div h2 {
+    font-size: 25px;
+  }
+
+  section .repairs div p {
+    font-size: 14px;
+  }
+}
+
+/* Medium devices (landscape tablets, 599px and up) */
+@media only screen and (min-width: 599px) and (max-width: 969px) {
+  section .repairs {
+    height: 320px;
+    background-repeat: no-repeat;
+  }
+
+  section .repairs .repairs-caption {
+    width: 90%;
+    padding: 25px 40px;
+  }
+
+  section .repairs div h2 {
+    font-size: 32px;
+  }
+
+  section .repairs div p {
+    font-size: 15px;
+  }
+}
+
+/* large devices (laptops/desktops,from 970px to 1108px) */
+@media only screen and (min-width: 970px) and (max-width: 1108px) {
+  section .repairs {
+    height: 380px;
+  }
+
+  section .repairs .repairs-caption {
+    width: 80%;
+    padding: 25px 40px;
+  }
+
+  section .repairs div p {
+    font-size: 18px;
+  }
+}
+
+/* </Repairs> */
+
+/* <Energy Innovators> */
+
+section .container .energyInnovators {
+  display: flex;
+  position: relative;
+  padding: 85px 0;
+}
+
+.spacial {
+  background-color: rgba(255, 187, 28, 0.05);
+}
+
+section .container .energyInnovators .energyInnovatorsProducts {
+  width: 35%;
+  margin-right: 80px;
+}
+
+section
+  .container
+  .energyInnovators
+  .energyInnovatorsProducts
+  .energyInnovatorsImg {
+  background-color: #3cab90;
+  box-shadow: 0 0 0 8px rgba(60, 171, 144, 0.15);
+  position: relative;
+  bottom: 15px;
+  width: 56px;
+  height: 56px;
+  padding: 14px;
+  border-radius: 10px;
+  border: 21px;
+  opacity: 0px;
+}
+
+section
+  .container
+  .energyInnovators
+  .energyInnovatorsProducts
+  .energyInnovatorsImg
+  img {
+  width: 100%;
+}
+
+section .container .energyInnovators .energyInnovatorsProducts p {
+  width: 100%;
+  font-size: 16px;
+  color: rgba(71, 84, 103, 1);
+}
+
+section .container .energyInnovators .energyInnovatorsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 32px;
+  width: 75%;
+  align-items: start;
+  justify-items: stretch;
+}
+
+section .container .energyInnovators .energyInnovatorsGrid .grid-item {
+  background-color: rgba(60, 171, 144, 0.05);
+  border: 1px solid rgba(60, 171, 144, 1);
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  padding: 24px;
+  gap: 32px;
+  border-radius: 12px;
+  opacity: 0px;
+}
+
+section .container .energyInnovators .energyInnovatorsGrid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+section .container .energyInnovators .solarKitsGrid-caption h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+section .container .energyInnovators .solarKitsGrid-caption p {
+  margin-top: 10px;
+  color: #475467;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+section .container .energyInnovators .solarKitsGrid-caption a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #3cab90;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  section .container .energyInnovators {
+    flex-direction: column;
+  }
+
+  section .container .energyInnovators .energyInnovatorsProducts {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  section .container .energyInnovators .energyInnovatorsGrid {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  section .container .energyInnovators .energyInnovatorsProducts h2 {
+    font-size: 28px;
+  }
+
+  section .container .energyInnovators .energyInnovatorsProducts p {
+    font-size: 14px;
+  }
+
+  section .container .energyInnovators .solarKitsGrid-caption p {
+    font-size: 12px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  section .container .energyInnovators {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  section .container .energyInnovators .energyInnovatorsProducts {
+    width: 100%;
+    margin-right: 60px;
+  }
+
+  section .container .energyInnovators .energyInnovatorsGrid {
+    width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .spacial .container {
+    width: 90%;
+  }
+
+  section .container .energyInnovators .energyInnovatorsProducts {
+    width: 30%;
+    margin-right: 60px;
+  }
+
+  section .container .energyInnovators .energyInnovatorsProducts h2 {
+    font-size: 28px;
+  }
+
+  section .container .energyInnovators .energyInnovatorsProducts p {
+    width: 100%;
+    font-size: 14px;
+    color: rgba(71, 84, 103, 1);
+  }
+
+  section .container .energyInnovators .energyInnovatorsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+
+  section .container .energyInnovators .energyInnovatorsGrid .grid-item {
+    padding: 20px;
+  }
+
+  section .container .energyInnovators .solarKitsGrid-caption h3 {
+    font-size: 18px;
+  }
+}
+/* </Energy Innovators> */
+
+/* <Our values> */
+section .container .values {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section .valuesGrid {
+  display: flex;
+  margin-top: 50px;
+}
+
+section .valuesGrid .valuesGrid-caption h3 {
+  padding: 15px 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+}
+
+section .valuesGrid .valuesGrid-caption p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+section .valuesGrid .valuesGrid-item {
+  width: 33%;
+  background-color: rgba(60, 171, 144, 0.05);
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid rgba(60, 171, 144, 1);
+  gap: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  section .container .values {
+    width: 90%; /* Adjust container width */
+    bottom: 40px; /* Adjust positioning */
+  }
+
+  section .valuesGrid {
+    flex-direction: column; /* Stack items vertically */
+    grid-gap: 20px; /* Reduce the gap between items */
+  }
+
+  section .valuesGrid .valuesGrid-item {
+    width: 100%; /* Full width for items */
+    padding: 15px 20px; /* Adjust padding */
+  }
+
+  section .valuesGrid .valuesGrid-caption p {
+    font-size: 14px; /* Smaller font for readability */
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  section .valuesGrid {
+    position: relative;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    grid-gap: 30px;
+  }
+
+  section .container .values {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  section .valuesGrid .valuesGrid-item {
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  section .valuesGrid {
+    position: relative;
+    margin-top: 100px;
+    flex-wrap: wrap;
+  }
+
+  section .container .values {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  section .valuesGrid .valuesGrid-item {
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+  section .valuesGrid {
+    grid-gap: 40px;
+  }
+}
+/* </Our values> */
+
+/* <WOC> */
+section .container .WOC {
+  display: flex;
+  gap: 87px;
+}
+
+section .container .WOC .WOC-rightSection {
+  width: 35%;
+}
+
+section .container .WOC .WOC-rightSection h2 {
+  font-family: "Inter", system-ui;
+  color: rgba(28, 28, 28, 1);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+section .container .WOC .WOC-rightSection p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgba(28, 28, 28, 1);
+}
+
+section .container .WOC .WOC-leftSection {
+  width: 70%;
+  background-color: rgba(60, 171, 144, 0.06);
+  padding: 40px;
+  border-radius: 24px;
+}
+
+section .container .WOC .WOC-leftSection div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .container .WOC .WOC-leftSection .smallWOC {
+  margin-bottom: 30px;
+}
+
+section .container .WOC .WOC-leftSection div small {
+  color: rgba(60, 171, 144, 1);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.pagination {
+  display: flex;
+  position: relative;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 3px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.dot.active {
+  background-color: rgba(107, 107, 107, 1);
+}
+
+section .container .WOC .WOC-leftSection div q {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  width: 82%;
+  margin-bottom: 30px;
+}
+
+section .container .WOC .WOC-leftSection .personalDescription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+section .container .WOC .WOC-leftSection .personalDescription div {
+  display: flex;
+}
+
+section .container .WOC .WOC-leftSection .personalDescription div span {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(28, 28, 28, 1);
+  text-align: center;
+  border-radius: 50%;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+section
+  .container
+  .WOC
+  .WOC-leftSection
+  .personalDescription
+  .personalDescriptionImg {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  justify-content: center;
+  align-items: start;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  section .container .WOC {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  section .container .WOC .WOC-rightSection {
+    width: 100%;
+  }
+
+  section .container .WOC .WOC-rightSection h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  section .container .WOC .WOC-rightSection p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  section .container .WOC .WOC-leftSection {
+    width: 100%;
+    padding: 20px;
+  }
+
+  section .container .WOC .WOC-leftSection div q {
+    font-size: 18px;
+    line-height: 28px;
+    width: 100%;
+  }
+
+  section .container .WOC .WOC-leftSection .personalDescription {
+    align-items: start;
+  }
+
+  section .container .WOC .WOC-leftSection .personalDescription div span {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  section .container .WOC {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  section .container .WOC .WOC-rightSection {
+    width: 100%;
+  }
+
+  section .container .WOC .WOC-rightSection h2 {
+    font-size: 44px;
+  }
+
+  section .container .WOC .WOC-rightSection p {
+    font-size: 16px;
+  }
+
+  section .container .WOC .WOC-leftSection {
+    width: 100%;
+    padding: 30px;
+  }
+
+  section .container .WOC .WOC-leftSection div q {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  section .container .WOC .WOC-leftSection .personalDescription {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  section .container .WOC {
+    gap: 30px;
+  }
+
+  section .container .WOC .WOC-rightSection {
+    width: 35%;
+  }
+
+  section .container .WOC .WOC-rightSection h2 {
+    font-size: 36px;
+  }
+
+  section .container .WOC .WOC-leftSection {
+    width: 65%;
+    padding: 40px;
+  }
+}
+/* </WOC> */
+
+/* <footer> */
+footer {
+  background-color: rgba(40, 54, 70, 1);
+  height: auto;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+footer .footerFirstSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+footer .footerFirstSection .footerRightSection ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-weight: 400;
+  margin-top: 35px;
+}
+
+footer .footerFirstSection .footerRightSection,
+footer .footerFirstSection .footerLeftSection {
+  width: 40%;
+  color: white;
+}
+
+footer .footerFirstSection .footerLeftSection div input {
+  margin-top: 10px;
+  border-radius: 30px;
+  padding: 10px 50px 10px 15px;
+  background-color: rgba(255, 255, 255, 0.09);
+  color: rgba(146, 152, 159, 1);
+  border: 1px solid rgba(179, 189, 199, 1);
+}
+
+footer .footerFirstSection .footerLeftSection div button {
+  background-color: rgba(255, 187, 28, 1);
+  color: white;
+  position: relative;
+  right: 70px;
+}
+
+hr {
+  width: 100%;
+  margin: 40px 0;
+  background-color: rgba(113, 119, 125, 1);
+}
+
+footer .footerSecondSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(146, 152, 159, 1);
+  font-size: 12px;
+}
+
+footer .container .footerSecondSection ul {
+  width: 40%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .container .footerSecondSection ul li {
+  margin-right: 10px;
+}
+
+footer .container .footerSecondSection ul li::after {
+  content: "|";
+  margin-left: 15px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  footer .container {
+    width: 90%;
+  }
+
+  footer .footerFirstSection {
+    flex-wrap: wrap;
+  }
+
+  footer .footerFirstSection .footerRightSection ul {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  footer .footerFirstSection .footerRightSection,
+  footer .footerFirstSection .footerLeftSection {
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+  }
+
+  footer .footerFirstSection .footerLeftSection div input {
+    padding: 10px 50px 10px 15px;
+  }
+
+  footer .footerFirstSection .footerLeftSection div button {
+    left: 170px;
+    bottom: 40px;
+  }
+
+  hr {
+    margin: 10px 0 30px;
+  }
+
+  footer .footerSecondSection {
+    flex-wrap: wrap;
+  }
+
+  footer .container .footerSecondSection ul {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 10px;
+    flex-wrap: wrap;
+  }
+
+  footer .container .footerSecondSection ul li {
+    margin-right: 5px;
+  }
+
+  footer .container .footerSecondSection ul li::after {
+    content: "|";
+    margin-left: 5px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  footer .container {
+    width: 95%;
+  }
+
+  footer .footerFirstSection {
+    flex-wrap: wrap;
+  }
+
+  footer .footerFirstSection .footerRightSection {
+    width: 55%;
+  }
+
+  footer .footerFirstSection .footerLeftSection {
+    width: 45%;
+    color: white;
+    position: relative;
+    top: 40px;
+    left: 30px;
+  }
+
+  footer .footerFirstSection .footerLeftSection div input {
+    padding: 10px 0 10px 10px;
+  }
+
+  footer .footerFirstSection .footerLeftSection div button {
+    left: 150px;
+    bottom: 40px;
+  }
+
+  footer .container .footerSecondSection ul {
+    width: 60%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  footer .container {
+    width: 90%;
+  }
+
+  footer .footerFirstSection .footerRightSection,
+  footer .footerFirstSection .footerLeftSection {
+    width: 45%;
+    color: white;
+  }
+
+  footer .container .footerSecondSection ul {
+    width: 50%;
+  }
+}
+
+/* </footer> */
